@@ -4,7 +4,7 @@ import "./sidebar.scss";
 
 function SideBar() {
   return (
-    <div>
+    <div className="border-white border-opacity-10 border-r-[1px] h-full">
       <div className="h-10 flex items-center mb-10">
         <h1 className="text-[1.3rem] text-primary-400 font-bold">
           AppName

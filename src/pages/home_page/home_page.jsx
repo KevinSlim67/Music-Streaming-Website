@@ -2,6 +2,7 @@ import React from "react";
 import ItemsList from "../../components/items_list/items_list";
 import CurrentTopArtist from "./current_top_artist";
 import LibraryBox from "./library_box";
+import PremiumSubscription from "./premium_subscription";
 
 function HomePage(props) {
   return (
@@ -12,9 +13,10 @@ function HomePage(props) {
       </div>
 
       <div>
-        <ItemsList title="Recently played" />
-        <ItemsList title="Made for you" />
-        <ItemsList title="New releases" />
+        <ItemsList title="Recently played" className="mb-12"/>
+        <ItemsList title="Made for you" className="mb-12" />
+        <PremiumSubscription className="mb-12 rounded-[56px]" />
+        <ItemsList title="New releases" className="mb-12" />
       </div>
     </div>
   );

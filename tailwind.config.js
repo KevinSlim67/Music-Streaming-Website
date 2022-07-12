@@ -13,11 +13,14 @@ module.exports = {
 
         secondary: {
           dark: '#00010D',
-          dark_lighter: '#08071C'
+          dark_lighter: '#08071C',
+          light: '#dfe0df'
         },
 
         accent: {
-          800: '#004F42',
+          200: '#03BEA8',
+          400: '#008E7D',
+          800: '#005248',
         },
 
         info: '#0090E1',
