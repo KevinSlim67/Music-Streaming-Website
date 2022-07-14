@@ -24,8 +24,8 @@ function ItemsList(props) {
       <div className="list flex gap-5 w-full pb-4 overflow-x-scroll">
 
         {list.map((e) => (
-          <div className="flex flex-col">
-            <div class="w-[12rem] h-[12rem] rounded-[20px] bg-white"></div>
+          <div className="item-card flex flex-col">
+            <div className="image w-[12rem] h-[12rem] rounded-[20px] bg-white"></div>
             <span className="mt-3 font-bold text-[1.1rem]">{e.song}</span>
             <span>{e.singer}</span>
           </div>

@@ -6,9 +6,19 @@
   grid-template-rows: 100%;
 }
 
+@media (max-width: 800px) {
+  .Layout {
+    display: flex;
+    width: 100%;
+  }
+
+  #sidebar {
+    display: none;
+  }
+}
+
 #sidebar {
   grid-area: sidebar;
-  min-width: 150px;
 }
 
 #navbar {

@@ -1,5 +1,106 @@
 .premium-subscription {
-    background: linear-gradient(249.78deg, #FFE145 26.94%, #C86C00 74.07%);
-    background-image: url("../../../public/images/shapes/premium_subscription_vector.svg"); /* fallback */
-    background-image: url("../../../public/images/shapes/premium_subscription_vector.svg"), linear-gradient(249.78deg, #FFE145 26.94%, #C86C00 74.07%); /* W3C */
+  background: linear-gradient(249.78deg, #ffe145 26.94%, #c86c00 74.07%);
+  background-image: url("../../../public/images/shapes/premium_subscription_vector.svg"); /* fallback */
+  background-image: url("../../../public/images/shapes/premium_subscription_vector.svg"),
+    linear-gradient(249.78deg, #ffe145 26.94%, #c86c00 74.07%); /* W3C */
+}
+
+@media (max-width: 1300px) {
+  .library-box {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .top-section {
+    height: 22rem;
+  }
+
+  .current-top-artist, .premium-subscription {
+    border-radius: 30px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .current-top-artist .text {
+    font-size: 0.8rem;
+  }
+
+  .current-top-artist .text h2 {
+    font-size: 1.6rem !important;
+    line-height: 2rem !important;
+  }
+
+  .premium-subscription .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .premium-subscription {
+    height: auto;
+    padding-bottom: 2.3rem;
+  }
+
+  .wrapper h3 {
+    text-align: center;
+  }
+
+  .benefits ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .free-trial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+}
+
+@media (max-width: 360px) {
+  .current-top-artist .text {
+    width: 40%;
+  }
+
+  .current-top-artist .image {
+    width: 60%;
+  }
+}
+
+.small-albums-grid {
+  display: grid;
+  grid-template-columns: minmax(auto, 50%) minmax(auto, 50%);
+  grid-template-rows: minmax(auto, 50%) minmax(auto, 50%);
+  grid-gap: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .trending-albums {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  .small-albums-grid {
+    grid-gap: 10px;
+  }
+
+  .big-album, .small-albums-grid {
+    width: 100%;
+    border-radius: 20px !important;
+  }
+
+  .small-albums-grid > div {
+    border-radius: 20px !important;
+  }
+
+
 }

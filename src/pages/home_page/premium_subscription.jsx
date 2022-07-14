@@ -25,8 +25,8 @@ function PremiumSubscription(props) {
       </h2>
 
       <div className="w-full flex justify-center z-10">
-        <div className="w-[80%] flex justify-between">
-          <div className="text-black">
+        <div className="wrapper w-[80%] flex justify-between">
+          <div className="benefits text-black">
             <h3 className="text-2xl font-semibold mb-4">Benefit From</h3>
             <ul className="list-disc list-inside text-[1.1rem]">
               <li>Unlimited Skips</li>
@@ -37,7 +37,7 @@ function PremiumSubscription(props) {
             </ul>
           </div>
 
-          <div className="mt-10">
+          <div className="free-trial mt-10">
             <h3 className="text-[1.7rem] text-center font-semibold text-black mb-7">
               30 Days Free trial
             </h3>

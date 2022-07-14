@@ -26,12 +26,12 @@ const eightSongs = songs.slice(0, 8);
 function CurrentTopArtist(props) {
   const { className } = props;
   return (
-    <div style={style} className={`${className} relative flex z-10`}>
-      <div className="h-full w-1/2 absolute right-0 flex items-end">
-        <img src="/images/artists/woman.png" alt="woman" />
+    <div style={style} className={`${className} relative flex z-10 overflow-hidden`}>
+      <div className="image h-full w-1/2 absolute right-[-2rem]">
+        <img src="/images/artists/woman.png" alt="woman" className="max-w-full max-h-full" />
       </div>
 
-      <div className="relative w-1/2 ml-7 flex flex-col justify-between pt-5 pb-11">
+      <div className="text relative w-1/2 ml-7 flex flex-col justify-between pt-5 pb-11">
         <div>
           <h2 className="text-3xl font-bold mt-[20%] text-accent-800">{`[Artist Name] Hits`}</h2>
 
@@ -44,12 +44,12 @@ function CurrentTopArtist(props) {
         </div>
 
         <div className="flex flex-col font-semibold">
-          <span className="flex mb-1">
-            <img src="/images/icons/heart.png" alt="" className="mr-2 max-h-[90%]" />
+          <span className="flex mb-1 items-center">
+            <img src="/images/icons/heart.png" alt="" className="mr-2 w-[1.3em] h-[1.3em]" />
             100000 Likes
           </span>
-          <span className="flex">
-            <img src="/images/icons/music_note.png" alt="" className="mr-2 max-h-[90%]" />
+          <span className="flex items-center">
+            <img src="/images/icons/music_note.png" alt="" className="mr-2 w-[1.3em] h-[1.3em]" />
             100 Songs
           </span>
         </div>
